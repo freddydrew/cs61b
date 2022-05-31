@@ -75,4 +75,53 @@ public class Body {
         return FyNet;
     }
 
+    public void update(double t, double Fx, double Fy){
+        double ax = Fx/this.mass;
+        double ay = Fy/this.mass;
+
+        this.xxVel = this.xxVel+(t*ax);
+        this.yyVel = this.yyVel+(t*ay);
+
+        this.xxPos = this.xxPos+(t*this.xxVel);
+        this.yyPos = this.yyPos+(t*this.yyVel);
+    }
+
+    public void draw(){
+        StdDraw.picture(this.xxPos, this.yyPos, "images/" + this.imgFileName);
+        StdDraw.show();
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
