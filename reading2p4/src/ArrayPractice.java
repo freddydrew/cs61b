@@ -1,5 +1,6 @@
 public class ArrayPractice {
     public static void main(String args[]){
+        //*Java Arrays are immutable */
         //x = new int[3]; DOES NOT WORK
         //y = new int[]{1, 2, 3, 4, 5}; DOES NOT WORK
         int[] fred = {9, 10, 11, 12, 13};
