@@ -1,5 +1,5 @@
 public class DLList <T>{
-    public  node sentinel;
+    public node sentinel;
     public int size;
 
     private class node{
